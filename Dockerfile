@@ -27,6 +27,10 @@ RUN rm -rf /var/lib/apt/lists/*
 # Cleanup
 RUN apt-get clean all
 
+# Configure Bundler
+RUN bundle config --global frozen 1
+RUN bundle config --global jobs 8
+
 ENV RAILS_VERSION 4.1.6
 
 RUN gem install rails --version "$RAILS_VERSION"
