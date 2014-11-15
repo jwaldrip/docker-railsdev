@@ -28,5 +28,4 @@ RUN rm -rf /var/lib/apt/lists/*
 RUN apt-get clean all
 
 # Configure Bundler
-RUN bundle config --global frozen 1
 RUN bundle config --global jobs `nproc`
