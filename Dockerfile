@@ -1,4 +1,4 @@
-FROM ruby:2.2
+FROM ruby:2.1
 
 # Update and upgrade
 RUN apt-get update && apt-get upgrade -y
